@@ -55,6 +55,9 @@ make test
 
 # Check syntax
 make lint
+
+# Trigger CI on GitHub without a commit
+make ci
 ```
 
 ## Roadmap

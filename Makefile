@@ -1,4 +1,4 @@
-.PHONY: install test lint clean
+.PHONY: install test lint clean ci
 
 install:
 	pip install --upgrade pip
@@ -13,3 +13,6 @@ lint:
 
 clean:
 	python scraper.py --clean
+
+ci:
+	gh workflow run test.yml
