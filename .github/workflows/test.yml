@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt -r requirements-dev.txt
 
+      - name: Set up config
+        run: cp config.example.py config.py
+
       - name: Run tests
         run: pytest tests/ -v --cov=scraper --cov-report=term-missing
