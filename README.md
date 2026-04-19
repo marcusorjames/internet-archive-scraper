@@ -6,7 +6,7 @@ Download media from [Internet Archive](https://archive.org) to a local or remote
 
 ```bash
 direnv allow
-make install
+just install
 ```
 
 Copy the example config and set `OUTPUT_DIR` to wherever you want files saved:
@@ -48,16 +48,16 @@ SSH into the server, clone this repo, set `OUTPUT_DIR` to the target directory, 
 
 ```bash
 # Install all dependencies including dev tools
-make install
+just install
 
 # Run tests with coverage
-make test
+just test
 
 # Check syntax
-make lint
+just lint
 
 # Trigger CI on GitHub without a commit
-make ci
+just ci
 ```
 
 ## Roadmap
